@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+
+spring:
+  application:
+    name: vehicle-streams
+  kafka:
+    streams:
+      bootstrap-servers: localhost:9092
+      application-id: vehicle-streams
+    properties:
+      default:
+        key.serde: 'org.apache.kafka.common.serialization.Serdes$StringSerde'
+        value.serde: 'org.apache.kafka.common.serialization.Serdes$StringSerde'
